@@ -3,7 +3,7 @@
 We are given a packet capture file. There is a lot of network traffic on the packet capture.
 `tshark -r captur.pcap` gives us a lot of unnecessary info.
 Let's look at the FTP traffic only 
-`$ tshark -r captur.pcap`.
+`$ tshark -r captur.pcap -Y ftp`.
 Still a lot of data but we are getting close. We can see some login attempts. Let's filter only the `PASS` commands in ftp requests.
 ```
 $ tshark -r 5b8ff402af82f47.pcap -Y 'ftp.request.command contains "PASS"'
