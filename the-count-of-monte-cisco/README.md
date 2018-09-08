@@ -4,11 +4,8 @@ We are given a config file of some Cisco Router. After reading a bit about cisco
 ```Setting or Changing a Static Enable Password
 To set or change a static password that controls access to privileged EXEC (enable) mode, use the following command in global configuration mode:
 
-Command
-Purpose
-Router(config)# enable password password
-
-Establishes a new password or change an existing password for the privileged command level.
+Command: Router(config)# enable password password
+Purpose: Establishes a new password or change an existing password for the privileged command level.
 ```
 
 Well let's search our config for passwords:
